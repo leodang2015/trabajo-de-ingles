@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bug reporting and tracking workflow: detection, classification, lifecycle and tools (Jira, Bugzilla, Redmine, GitHub, Asana).">
+    <title>Bug Reporting and Tracking Workflow</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Bug Reporting and Tracking Workflow</h1>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        
+        <section class="hero mt-6 mb-6">
+            <img src="https://significado.com/img/cul/clasificar-personas.jpg" alt="Classification overview - Bug tracking process illustration" loading="lazy">
+            <div class="hero-caption">Understanding Bug Classification in Software Development</div>
+        </section>
+
+        <section class="video-section section">
+            <h2>Introduction</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/H6OHON9shqA" 
+                    title="Bug Reporting Workflow Introduction Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What is Bug Reporting and Tracking?</h2>
+            <p>It is the process of logging and monitoring bugs or errors during software testing. It is also known as <strong>bug tracking</strong> or <strong>issue tracking</strong>. This systematic approach ensures that software defects are properly documented, prioritized, and resolved efficiently.</p>
+        </section>
+
+        <section class="section">
+            <h2>Detecting the Problem</h2>
+            <p>The bug workflow is the process followed when a bug appears in software. This systematic process ensures that no issue goes unnoticed and that every defect is properly documented for resolution.</p>
+            
+            <ol>
+                <li><strong>Detection:</strong> First, someone detects the bug; this could be a user or a tester. Afterward, the bug is reported, explaining what happened and how the problem could occur again in the software system.</li>
+                <li><strong>Review & Prioritization:</strong> Then, the team reviews the report, decides how serious it is and how urgently it needs to be fixed. Once the bug is clear, it is assigned to a developer.</li>
+                <li><strong>Fixing:</strong> The developer reviews the problem, fixes it, and updates the report status.</li>
+                <li><strong>Verification:</strong> Afterward, tests are run to verify that the bug is gone. If everything works correctly, the case is closed.</li>
+                <li><strong>Re-testing:</strong> If there is still a problem, it is reviewed again until it is fixed.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Problem Classification</h2>
+            <p>The bug reporting and tracking workflow can be primarily classified by <strong>severity</strong> (technical impact) and by <strong>priority</strong> (business urgency). The process follows a lifecycle from reporting, analysis, correction, verification and closure, using tools like Jira or Bugzilla.</p>
+            
+            <h3>Severity (Technical Impact)</h3>
+            <ul class="severity-list">
+                <li><strong>Blocking / Catastrophic:</strong> The system does not work, the software fails completely, or it causes data loss.</li>
+                <li><strong>Critical:</strong> The system works, but an important function is not working correctly.</li>
+                <li><strong>Important:</strong> The system works, but a secondary function is not working correctly.</li>
+                <li><strong>Minor:</strong> The system works, but there is a minor problem that does not affect the main functionality.</li>
+                <li><strong>Trivial:</strong> The system works, but there is a cosmetic problem.</li>
+            </ul>
+
+            <h3>Priority (Business Urgency)</h3>
+            <ul class="priority-list">
+                <li><strong>Urgent:</strong> The error must be corrected as soon as possible due to its impact on the business or the users.</li>
+                <li><strong>High:</strong> The error must be fixed soon, but it is not as critical as an urgent error.</li>
+                <li><strong>Medium:</strong> The error must be fixed within a reasonable timeframe, but it is not a high priority.</li>
+                <li><strong>Low:</strong> The error can be fixed in a longer timeframe, as it does not have a significant impact on the business or users.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Error Workflow Lifecycle</h2>
+            <p>Its lifecycle is structured to ensure that errors are detected, documented, corrected, and verified. It comprises key stages: detection, reporting, triage, assignment, resolution, retesting, and closure.</p>
+            
+            <ol>
+                <li><strong>Detection (New):</strong> A tester, user, or automated tool identifies unexpected behavior. The error is reported and remains in the "New" state.</li>
+                <li><strong>Triage / Validation (Open):</strong> The technical team analyzes the report to confirm that it is a valid, reproducible error and not a duplicate. Its priority and severity are established and it enters the "Open" status.</li>
+                <li><strong>Assignment:</strong> The bug is assigned to a specific developer for investigation and fix.</li>
+                <li><strong>In Progress:</strong> The developer is working on the code to fix the bug.</li>
+                <li><strong>Fixed / Resolved:</strong> The developer implements the fix and marks the bug as "Resolved" for QA to verify.</li>
+                <li><strong>Retest / Verification:</strong> The tester checks if the bug was fixed in the corresponding environment.</li>
+                <li><strong>If it passes:</strong> The bug is marked as "Verified" or "Closed".</li>
+                <li><strong>If it fails:</strong> The bug is "Reopened" and returned to the developer.</li>
+                <li><strong>Closed:</strong> The bug is marked as "Closed" upon confirmation of its final solution.</li>
+            </ol>
+        </section>
+
+        <section class="section tools-section">
+            <h2>Tools Used</h2>
+            <p>Some tools that help organize and track bugs are:</p>
+            
+            <div class="tools-grid">
+                <article class="tool">
+                    <img src="https://cdn.simpleicons.org/jira/0052CC" alt="Jira Logo" class="tool-logo" loading="lazy">
+                    <div>
+                        <h4>Jira</h4>
+                        <p>A project management tool to create, assign and track bugs.</p>
+                    </div>
+                </article>
+                
+                <article class="tool">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bugzilla_logo_%282022%29.svg/960px-Bugzilla_logo_%282022%29.svg.png" alt="Bugzilla Logo" class="tool-logo" loading="lazy">
+                    <div>
+                        <h4>Bugzilla</h4>
+                        <p>Open-source bug tracking system.</p>
+                    </div>
+                </article>
+                
+                <article class="tool">
+                    <img src="https://cdn.simpleicons.org/redmine/B32024" alt="Redmine Logo" class="tool-logo" loading="lazy">
+                    <div>
+                        <h4>Redmine</h4>
+                        <p>Project management tool with bug tracking features.</p>
+                    </div>
+                </article>
+                
+                <article class="tool">
+                    <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Logo" class="tool-logo" loading="lazy">
+                    <div>
+                        <h4>GitHub Issues</h4>
+                        <p>Built-in issue tracker for code and bugs.</p>
+                    </div>
+                </article>
+                
+                <article class="tool">
+                    <img src="https://cdn.simpleicons.org/asana/F06A6A" alt="Asana Logo" class="tool-logo" loading="lazy">
+                    <div>
+                        <h4>Asana</h4>
+                        <p>Project management tool usable for bug/task tracking.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+            <section class="top">
+            <h2>flow chart</h2>
+            <img src="./bugs.jpeg" alt="diagrama de flujo">
+            </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">What do I do if I find a bug?</div>
+                <p class="faq-answer">The best thing to do is report it using the form provided by the company or team. Be sure to include detailed information about how to reproduce the bug, what you were doing when it occurred, and any error messages you received.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do you decide which bug to fix first?</div>
+                <p class="faq-answer">It depends on how much it affects the user and how important it is for the program to function properly. Bugs are typically prioritized based on their severity and business impact.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What if the bug can't be reproduced?</div>
+                <p class="faq-answer">If it cannot be reproduced, the development team may request more information or close the report if it is not considered a valid bug. Providing detailed steps to reproduce helps enormously.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long does it take to fix a bug?</div>
+                <p class="faq-answer">It depends on the severity of the problem. Some are fixed quickly, and others may take longer if they are complex. Critical bugs are typically addressed immediately.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Who verifies that the bug has been fixed?</div>
+                <p class="faq-answer">The tester or the QA (Quality Assurance) team verifies that the bug has been correctly fixed through thorough testing in the appropriate environment.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Bug Reporting Guide — Images & logos used for illustrative purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const placeholder = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="%23f3f3f3"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23888" font-size="18">Image not available</text></svg>';
+            
+            document.querySelectorAll('img').forEach(function(img) {
+                if (!img.hasAttribute('loading')) {
+                    img.setAttribute('loading', 'lazy');
+                }
+                img.addEventListener('error', function() {
+                    if (this.src !== placeholder) {
+                        this.src = placeholder;
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
